@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Valeras Narbutas – Microsoft MVP & M365 Architect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Microsoft MVP specializing in Microsoft 365, Power Platform, SPFx, Azure Functions and AI-driven automation." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --bg-alt: #111727;
+      --card: #151b2e;
+      --accent: #4ba3ff;
+      --accent-soft: rgba(75,163,255,0.15);
+      --text: #f3f5ff;
+      --muted: #a7b0c7;
+      --border: #252b3f;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --shadow-soft: 0 18px 45px rgba(0,0,0,0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #151d3b 0, #050713 65%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 16px 60px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+
+    .brand {
+      flex: 1 1 260px;
+    }
+
+    .name {
+      font-size: clamp(2.1rem, 3vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .tagline {
+      margin-top: 6px;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .pill-row {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--accent-soft);
+      background: rgba(5, 12, 35, 0.9);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+    }
+
+    .contact {
+      flex: 1 1 240px;
+      min-width: 220px;
+      background: linear-gradient(135deg, rgba(75,163,255,0.18), rgba(15,25,71,0.9));
+      border-radius: var(--radius-lg);
+      padding: 16px 18px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .contact-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .contact-item {
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.2fr);
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: var(--bg-alt);
+      border-radius: var(--radius-lg);
+      padding: 18px 18px 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+    }
+
+    .card + .card {
+      margin-top: 16px;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .emph {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 6px;
+    }
+
+    li {
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 24px;
+    }
+
+    @media (max-width: 700px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .chip {
+      font-size: 0.78rem;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 36px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <div class="name">Valeras Narbutas</div>
+        <div class="tagline">
+          Microsoft MVP • Microsoft 365 Architect & Lead Developer • Power Platform & AI Automation Specialist
+        </div>
+        <div class="pill-row">
+          <span class="pill">Microsoft 365</span>
+          <span class="pill">Power Platform</span>
+          <span class="pill">SPFx & React</span>
+          <span class="pill">Azure Functions</span>
+          <span class="pill">Copilot & AI</span>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contact-title">Contact</div>
+        <div class="contact-item">📍 Lithuania (EU work eligible)</div>
+        <div class="contact-item">📞 +370 672 92978</div>
+        <div class="contact-item">✉️ <a href="mailto:valerasn@gmail.com">valerasn@gmail.com</a></div>
+        <div class="contact-item">🔗 <a href="https://www.linkedin.com/in/valerasnarbutas" target="_blank">LinkedIn</a></div>
+        <div class="contact-item">💻 <a href="https://github.com/ValerasNarbutas" target="_blank">GitHub</a></div>
+        <div class="contact-item">🎖️ <a href="https://www.credly.com/users/valeras-narbutas" target="_blank">Credly</a></div>
+      </div>
+    </header>
+
+    <main>
+      <!-- LEFT COLUMN -->
+      <div>
+        <section class="card">
+          <div class="card-title">Profile</div>
+          <h2>About</h2>
+          <p class="muted">
+            Microsoft MVP with 18+ years of experience designing, building, and leading modern workplace solutions
+            across Microsoft 365, Power Platform, SharePoint, Azure, and Microsoft Teams. Combines deep hands-on
+            development (SPFx, React, PowerApps, Power Automate, Azure Functions) with solution architecture,
+            governance, and AI-driven automation using M365 Copilot and Copilot Studio.
+          </p>
+        </section>
+
+        <section class="card">
+          <div class="card-title">Experience</div>
+
+          <h2>Senior Power Platform Developer / M365 Solutions – <span class="emph">Chevron</span></h2>
+          <div class="muted">Aug 2023 – Oct 2025 · Remote, global teams</div>
+          <ul>
+            <li>Designed and implemented enterprise Power Platform solutions combining PowerApps, Power Automate, Dataverse, and Azure Functions.</li>
+            <li>Defined solution structures, documentation standards, and deployment processes for scalable and maintainable apps.</li>
+            <li>Contributed to governance and best practices for flows, environments, and connectors.</li>
+          </ul>
+
+          <h2>Senior Software Developer / M365 – <span class="emph">Macaw</span></h2>
+          <div class="muted">Nov 2018 – Dec 2024 · Netherlands & Lithuania</div>
+          <ul>
+            <li>Lead developer across SPFx, Microsoft Teams, PowerApps, Power Automate, and Azure Functions.</li>
+            <li>Architected and delivered modern intranet components and Teams-integrated applications.</li>
+            <li>Mentored developers and makers, raising overall solution quality and consistency.</li>
+          </ul>
+
+          <h2>M365 Consultant – <span class="emph">Michael A Fox Associates Ltd</span></h2>
+          <div class="muted">Jun 2025 – Aug 2025 · Remote</div>
+          <ul>
+            <li>Built a branded SharePoint Online intranet with navigation, content type hub, and project libraries.</li>
+            <li>Enhanced search with managed properties, custom templates, and external sources.</li>
+            <li>Developed PowerApps and Power Automate flows for project creation, metadata, and Teams notifications.</li>
+          </ul>
+
+          <h2>M365 Specialist – <span class="emph">IAAI Arbeitssicherheit GmbH</span></h2>
+          <div class="muted">Jul 2025 – Aug 2025 · Remote</div>
+          <ul>
+            <li>Automated SharePoint site provisioning from master data lists with incremental provisioning.</li>
+            <li>Integrated with Microsoft Graph for group creation and membership management.</li>
+            <li>Implemented OneDrive sync automation and an admin hub for monitoring.</li>
+          </ul>
+
+          <h2>Senior SharePoint Developer / Engineer – <span class="emph">Barclays</span></h2>
+          <div class="muted">Aug 2011 – Nov 2018 · Lithuania</div>
+          <ul>
+            <li>Developed SharePoint 2010/2013/2016 solutions using farm/sandbox solutions, SPFx, and provider-hosted apps.</li>
+            <li>Automated maintenance and migrations across large SharePoint farms with PowerShell.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <div class="card-title">Portfolio Highlights</div>
+          <div class="two-col">
+            <div>
+              <h2>Automated Site Provisioning & OneDrive Sync</h2>
+              <p class="muted">IAAI Arbeitssicherheit GmbH</p>
+              <ul>
+                <li>Provisioned hundreds of project sites with robust error handling and logging.</li>
+                <li>Automated OneDrive mounting, permissions checks, and cleanup policies.</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Modern Intranet & Search Platform</h2>
+              <p class="muted">Michael A Fox Associates</p>
+              <ul>
+                <li>Modern intranet with strong navigation, metadata, and search customization.</li>
+                <li>PowerApps and Power Automate–driven project and document workflows.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <aside>
+        <section class="card">
+          <div class="card-title">Core Skills</div>
+          <h2>Microsoft 365 & Power Platform</h2>
+          <div class="chip-row">
+            <span class="chip">PowerApps</span>
+            <span class="chip">Power Automate</span>
+            <span class="chip">SharePoint Online</span>
+            <span class="chip">Microsoft Teams</span>
+            <span class="chip">SPFx</span>
+            <span class="chip">Modern Search</span>
+          </div>
+
+          <h2 style="margin-top:12px;">Azure & Integrations</h2>
+          <div class="chip-row">
+            <span class="chip">Azure Functions</span>
+            <span class="chip">Logic Apps</span>
+            <span class="chip">Microsoft Graph API</span>
+            <span class="chip">REST APIs</span>
+          </div>
+
+          <h2 style="margin-top:12px;">Development</h2>
+          <div class="chip-row">
+            <span class="chip">React</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">PowerShell</span>
+          </div>
+
+          <h2 style="margin-top:12px;">Architecture & Governance</h2>
+          <div class="chip-row">
+            <span class="chip">Solution Architecture</span>
+            <span class="chip">ALM & CI/CD</span>
+            <span class="chip">Environment Strategy</span>
+            <span class="chip">DLP & Governance</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-title">AI & Copilot</div>
+          <h2>AI-Driven Automation</h2>
+          <ul>
+            <li>Experience with M365 Copilot & Copilot Studio scenarios.</li>
+            <li>Designing AI-assisted workflows and prompt patterns.</li>
+            <li>Blending traditional automation with AI suggestions.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <div class="card-title">Community & Recognition</div>
+          <h2>Microsoft MVP</h2>
+          <ul>
+            <li>Microsoft MVP – Microsoft 365 for community contributions and technical excellence.</li>
+            <li>Active contributor to Microsoft 365 & Power Platform Community (PnP, samples, guidance).</li>
+            <li>Mentor at Women Go Tech, supporting professionals entering IT and M365 development.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <div class="card-title">Education & Languages</div>
+          <h2>Education</h2>
+          <ul>
+            <li>Bachelor’s Degree in Mathematics – Vilnius Gediminas Technical University.</li>
+          </ul>
+          <h2>Languages</h2>
+          <ul>
+            <li>Lithuanian – Native</li>
+            <li>English – Excellent</li>
+            <li>Russian – Fluent</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Valeras Narbutas · Microsoft MVP · Microsoft 365 / Power Platform / AI
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
