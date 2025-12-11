@@ -287,6 +287,93 @@
       font-size: 0.8rem;
       color: var(--muted);
     }
+
+    .export-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: linear-gradient(135deg, var(--accent), #3d8fd9);
+      color: white;
+      border: none;
+      border-radius: var(--radius-md);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 12px rgba(75, 163, 255, 0.3);
+    }
+
+    .export-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(75, 163, 255, 0.4);
+    }
+
+    .export-btn:active {
+      transform: translateY(0);
+    }
+
+    /* Print/PDF specific styles - remove shadows */
+    @media print {
+      body {
+        background: white;
+        color: #000;
+      }
+
+      .page {
+        padding: 0;
+      }
+
+      .export-btn {
+        display: none;
+      }
+
+      .card {
+        box-shadow: none !important;
+        border: 1px solid #ddd;
+        background: white;
+        color: #000;
+        page-break-inside: avoid;
+      }
+
+      .contact {
+        box-shadow: none !important;
+        border: 1px solid #ddd;
+        background: white;
+        color: #000;
+      }
+
+      a {
+        color: #0066cc;
+      }
+
+      .muted {
+        color: #666;
+      }
+
+      .card-title {
+        color: #333;
+      }
+
+      .tagline {
+        color: #666;
+      }
+
+      .chip, .pill {
+        border-color: #ddd;
+        background: #f5f5f5;
+        color: #333;
+      }
+
+      /* Ensure proper page breaks */
+      section {
+        page-break-inside: avoid;
+      }
+
+      header {
+        page-break-after: avoid;
+      }
+    }
   </style>
 </head>
 <body>
@@ -303,6 +390,16 @@
           <span class="pill">SPFx & React</span>
           <span class="pill">Azure Functions</span>
           <span class="pill">Copilot & AI</span>
+        </div>
+        <div style="margin-top: 16px;">
+          <button id="export-pdf-btn" class="export-btn" aria-label="Export to PDF">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Export to PDF
+          </button>
         </div>
       </div>
       <address class="contact">
@@ -550,6 +647,11 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    
+    // Export to PDF functionality
+    document.getElementById("export-pdf-btn").addEventListener("click", function() {
+      window.print();
+    });
   </script>
 </body>
 </html>
