@@ -52,6 +52,7 @@ Microsoft MVP with **18+ years of experience** designing, building, and leading 
 *Aug 2011 – Nov 2018 • Lithuania*
 
 - Developed SharePoint 2010/2013/2016 solutions using farm/sandbox solutions, SPFx, and provider-hosted apps
+- Built custom web applications using Angular framework for enhanced user experiences
 - Automated maintenance and migrations across large SharePoint farms with PowerShell
 
 ## 🚀 Portfolio Highlights
@@ -75,7 +76,7 @@ Microsoft MVP with **18+ years of experience** designing, building, and leading 
 `Azure Functions` `Logic Apps` `Microsoft Graph API` `REST APIs`
 
 ### Development
-`React` `TypeScript` `JavaScript` `Node.js` `PowerShell`
+`React` `Angular` `TypeScript` `JavaScript` `Node.js` `PowerShell`
 
 ### Architecture & Governance
 `Solution Architecture` `ALM & CI/CD` `Environment Strategy` `DLP & Governance`
