@@ -365,6 +365,16 @@
         color: #333;
       }
 
+      /* Display URLs for important links in print */
+      .contact-item a[href^="https://www.linkedin.com"]::after,
+      .contact-item a[href^="https://github.com"]::after,
+      .contact-item a[href^="https://www.credly.com"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.75rem;
+        color: #666;
+        word-break: break-all;
+      }
+
       /* Ensure proper page breaks */
       section {
         page-break-inside: avoid;
@@ -387,7 +397,7 @@
         <div class="pill-row">
           <span class="pill">Microsoft 365</span>
           <span class="pill">Power Platform</span>
-          <span class="pill">SPFx & React</span>
+          <span class="pill">SPFx with React or Angular</span>
           <span class="pill">Azure Functions</span>
           <span class="pill">Copilot & AI</span>
         </div>
@@ -655,4 +665,5 @@
   </script>
 </body>
 </html>
+
 
