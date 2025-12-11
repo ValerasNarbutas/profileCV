@@ -365,6 +365,16 @@
         color: #333;
       }
 
+      /* Display URLs for important links in print */
+      .contact-item a[href^="https://www.linkedin.com"]::after,
+      .contact-item a[href^="https://github.com"]::after,
+      .contact-item a[href^="https://www.credly.com"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.75rem;
+        color: #666;
+        word-break: break-all;
+      }
+
       /* Ensure proper page breaks */
       section {
         page-break-inside: avoid;
