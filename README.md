@@ -1,14 +1,14 @@
-# Valeras Narbutas – Microsoft MVP & M365 Architect
+# Valeras Narbutas – Microsoft MVP, M365 Architect & Product Developer
 
 [![Microsoft MVP](https://img.shields.io/badge/Microsoft-MVP-blue?style=flat-square&logo=microsoft)](https://mvp.microsoft.com/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/valerasnarbutas)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/ValerasNarbutas)
 
-> **Microsoft MVP • Microsoft 365 Architect & Lead Developer • Power Platform & AI Automation Specialist**
+> **Microsoft MVP • Microsoft 365 Architect & Lead Developer • Power Platform & AI Product Builder**
 
 ## 👋 About Me
 
-Microsoft MVP with **18+ years of experience** designing, building, and leading modern workplace solutions across **Microsoft 365, Power Platform, SharePoint, Azure, and Microsoft Teams**. I combine deep hands-on development (SPFx, React, PowerApps, Power Automate, Azure Functions) with solution architecture, governance, and AI-driven automation using M365 Copilot and Copilot Studio.
+Microsoft MVP with **18+ years of experience** designing, building, and leading modern workplace solutions across **Microsoft 365, Power Platform, SharePoint, Azure, and Microsoft Teams**. I combine hands-on development (SPFx, React, PowerApps, Power Automate, Azure Functions, and .NET) with solution architecture, governance, and practical AI-assisted product development.
 
 ## 📍 Contact
 
@@ -57,6 +57,22 @@ Microsoft MVP with **18+ years of experience** designing, building, and leading 
 
 ## 🚀 Portfolio Highlights
 
+### RequestHub — Early MVP Development
+
+- Developing a modular request-management product spanning user applications, workflow automation, data, and service components.
+- Defined the product foundation and implemented schema provisioning for inventory and technical-log capabilities.
+- **Technologies:** Power Platform, Dataverse, .NET, Azure Identity.
+
+### Smart Support Request — Working SharePoint Demo
+
+- Built an SPFx support-request experience and expanded it with an assistant for SharePoint site and business-support tasks.
+- Validated the web part in SharePoint and prepared a sample for the SPFx community repository.
+- **Technologies:** SPFx, React, TypeScript, SharePoint, WebMCP.
+
+### AI Startup Studio — Workflow and Concept Development
+
+- Developing an AI-assisted approach for idea research, evaluation, and creation of decision-ready documentation and presentations.
+
 ### Automated Site Provisioning & OneDrive Sync
 
 - Provisioned hundreds of project sites with robust error handling and logging
@@ -84,9 +100,8 @@ Microsoft MVP with **18+ years of experience** designing, building, and leading 
 ## 🤖 AI & Copilot
 
 **AI-Driven Automation**
-- Experience with M365 Copilot & Copilot Studio scenarios
-- Designing AI-assisted workflows and prompt patterns
-- Blending traditional automation with AI suggestions
+- Designing AI-assisted workflows and tool-enabled experiences for business and IT support
+- Combining Microsoft 365, SharePoint, and automation capabilities with conversational interfaces
 
 ## 🏆 Community & Recognition
 
