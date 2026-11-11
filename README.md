@@ -4,11 +4,11 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/valerasnarbutas)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/ValerasNarbutas)
 
-> **Microsoft MVP • Microsoft 365 Architect & Lead Developer • Power Platform & AI Product Builder**
+> **Four-year Microsoft MVP (M365) • M365 Development & Copilot • Architect & Lead Developer**
 
 ## 👋 About Me
 
-Microsoft MVP with **18+ years of experience** designing, building, and leading modern workplace solutions across **Microsoft 365, Power Platform, SharePoint, Azure, and Microsoft Teams**. I combine hands-on development (SPFx, React, PowerApps, Power Automate, Azure Functions, and .NET) with solution architecture, governance, and practical AI-assisted product development.
+Four-year **Microsoft MVP in M365** with **18+ years of experience** designing, building, and leading modern workplace solutions across **Microsoft 365, Power Platform, SharePoint, Azure, and Microsoft Teams**. My technology areas include **M365 Development and M365 Copilot**. I combine hands-on development (SPFx, React, PowerApps, Power Automate, Azure Functions, and .NET) with solution architecture, governance, and practical AI-assisted product development.
 
 ## 📍 Contact
 
@@ -106,13 +106,15 @@ Microsoft MVP with **18+ years of experience** designing, building, and leading 
 ## 🏆 Community & Recognition
 
 **Microsoft MVP**
-- Microsoft MVP – Microsoft 365 for community contributions and technical excellence
-- Active contributor to Microsoft 365 & Power Platform Community (PnP, samples, guidance)
-- Mentor at Women Go Tech, supporting professionals entering IT and M365 development
+- Four-year Microsoft MVP in the M365 category
+- Technology areas: M365 Development and M365 Copilot
+- Contributor to Microsoft 365 Patterns and Practices (PnP) projects since 2019
+- Mentor at Women Go Tech since 2021, supporting people entering IT and M365 development
 
 ## 🎓 Education & Languages
 
 ### Education
+- **Executive MBA (EMBA)** – Quantic School of Business and Technology, 2024–2026
 - **Bachelor's Degree in Mathematics** – Vilnius Gediminas Technical University
 
 ### Languages
