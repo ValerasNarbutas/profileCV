@@ -78,17 +78,17 @@
   </script>
   <style>
     :root {
-      --bg: #0b1020;
-      --bg-alt: #111727;
-      --card: #151b2e;
-      --accent: #4ba3ff;
-      --accent-soft: rgba(75,163,255,0.15);
-      --text: #f3f5ff;
-      --muted: #a7b0c7;
-      --border: #252b3f;
+      --bg: #f5f7fb;
+      --bg-alt: #f8fafc;
+      --card: #ffffff;
+      --accent: #1769aa;
+      --accent-soft: rgba(23,105,170,0.12);
+      --text: #1f2937;
+      --muted: #526173;
+      --border: #e1e7ef;
       --radius-lg: 16px;
       --radius-md: 10px;
-      --shadow-soft: 0 18px 45px rgba(0,0,0,0.35);
+      --shadow-soft: 0 8px 24px rgba(17,24,39,0.08);
     }
 
     * {
@@ -99,9 +99,9 @@
 
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #151d3b 0, #050713 65%);
+      background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     a {
@@ -133,8 +133,8 @@
 
     .name {
       font-size: clamp(2.1rem, 3vw, 2.6rem);
-      font-weight: 700;
-      letter-spacing: 0.03em;
+      font-weight: 600;
+      letter-spacing: 0.01em;
     }
 
     h1.name {
@@ -159,34 +159,33 @@
       padding: 4px 10px;
       border-radius: 999px;
       border: 1px solid var(--accent-soft);
-      background: rgba(5, 12, 35, 0.9);
+      background: #edf4fb;
       color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
+      letter-spacing: 0.04em;
     }
 
     .contact {
       flex: 1 1 240px;
       min-width: 220px;
-      background: linear-gradient(135deg, rgba(75,163,255,0.18), rgba(15,25,71,0.9));
+      background: linear-gradient(135deg, #edf5fd, #ffffff);
       border-radius: var(--radius-lg);
       padding: 16px 18px;
       box-shadow: var(--shadow-soft);
-      border: 1px solid rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
       font-style: normal;
     }
 
     .contact-title {
       font-size: 0.9rem;
-      font-weight: 600;
+      font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.08em;
       color: var(--muted);
       margin-bottom: 6px;
     }
 
     .contact-item {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       margin-bottom: 4px;
     }
 
@@ -207,11 +206,11 @@
     }
 
     .card {
-      background: var(--bg-alt);
+      background: var(--card);
       border-radius: var(--radius-lg);
-      padding: 18px 18px 16px;
+      padding: 20px 20px 18px;
       border: 1px solid var(--border);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+      box-shadow: var(--shadow-soft);
     }
 
     .card + .card {
@@ -220,25 +219,30 @@
 
     .card-title {
       font-size: 0.95rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
+      font-weight: 500;
+      letter-spacing: 0.04em;
       color: var(--muted);
       margin-bottom: 8px;
     }
 
     h2 {
-      font-size: 1.05rem;
+      font-size: 1.08rem;
+      font-weight: 600;
       margin-bottom: 8px;
     }
 
     .emph {
       color: var(--accent);
+      font-weight: 500;
+    }
+
+    strong {
       font-weight: 600;
     }
 
     .muted {
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
 
     ul {
@@ -249,8 +253,8 @@
     li {
       padding-left: 14px;
       position: relative;
-      margin-bottom: 4px;
-      font-size: 0.95rem;
+      margin-bottom: 6px;
+      font-size: 1rem;
     }
 
     li::before {
@@ -283,18 +287,18 @@
     }
 
     .chip {
-      font-size: 0.78rem;
+      font-size: 0.82rem;
       padding: 4px 9px;
       border-radius: 999px;
-      background: rgba(255,255,255,0.02);
-      border: 1px solid rgba(255,255,255,0.06);
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
       color: var(--muted);
     }
 
     footer {
       margin-top: 36px;
       text-align: center;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: var(--muted);
     }
 
@@ -303,7 +307,7 @@
       align-items: center;
       gap: 8px;
       padding: 10px 18px;
-      background: linear-gradient(135deg, var(--accent), #3d8fd9);
+      background: linear-gradient(135deg, var(--accent), #287db8);
       color: white;
       border: none;
       border-radius: var(--radius-md);
@@ -311,12 +315,12 @@
       font-weight: 600;
       cursor: pointer;
       transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 4px 12px rgba(75, 163, 255, 0.3);
+      box-shadow: 0 4px 12px rgba(23,105,170,0.2);
     }
 
     .export-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(75, 163, 255, 0.4);
+      box-shadow: 0 6px 16px rgba(23,105,170,0.28);
     }
 
     .export-btn:active {
